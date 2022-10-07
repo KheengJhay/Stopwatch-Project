@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 97.5vh;
+    padding: 5  0px;
+}
+div.stopwatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial Black;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+div.container > div.contr-container > button {
+    font-family: Arial;
+    font-size: 30px;
+    border-radius: 40rem;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid gray;
+    outline: none;
+    margin: 0 15px 0 15px;
+}
+div.container > div.contr-container > .refresh:hover{
+    background-color: red;
+    transition: all 0.8s;
+}
+div.container > div.contr-container > button:hover{
+    background-color: rgb(74, 74, 231);
+    transition: all 0.9s;
+}
+h1.milli{
+    width: 10px;
+    margin-right: 60px;
+}
+div.container > div.socials {
+    margin-top: 100px;
+}
+div.socials > a > i.fa.fa-globe{
+    color: gray;
+    font-size: 2rem;
+    padding: 15px;
+}
+div.socials > a > i.fa.fa-github{
+    color: black;
+    font-size: 2rem;
+    padding: 15px;
+}
+div.socials > a > i.fa.fa-twitter{
+    color: blue;
+    font-size: 2rem;
+    padding: 15px;
+}
+@media only screen and (min-width : 300px) {
+    div.stopwatch-container {
+        display: flex;
+        font-family: Arial Black;
+        font-size: 20px;
+    }
+    div.container > div.contr-container > button {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width : 320px) {
+    div.stopwatch-container {
+        display: flex;
+        font-family: Arial Black;
+        font-size: 25px;
+    }
+}
